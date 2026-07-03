@@ -1,0 +1,215 @@
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Hi bangaram</div>
+            <div class="message-time">9:07:02 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Ikkada nen cheooali anukunnadi already nenu chala sarlu cheppinundachu</div>
+            <div class="message-time">9:07:29 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">But nakosam malli inkosari inkosari vintav ani namutunna</div>
+            <div class="message-time">9:08:02 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Nenu ikkada cheppedhi antha naa manasulo unnade, edhi ninnu padeyali (ofc already padipoyav anuko) ledha ni dagara manchiga unnatu natinchali ani cheppatledhu.<br>Everything heart lo nunchi oche feel thone cheptunna.<br><br><br>So, my dear bangaram <br><br>Nenu ninnu chusindi first nenu college lo lassi shop lo<br>Chusinapudu blue top<br>White pant lo unnav, date gurtuledhu.<br><br>Appati nunche crush anuko, like first sight lone nachesav. <br><br>Kani em chedham, manaki unna introvertness ki asala chudadame ekkuva inka matladadam asala avvani pani<br><br>Inka ala ala konni situations valla manam kalavaledhu<br><br>Already niku boyfriend unnadu ani telisindi, appudu naku em anipichale<br><br>Paiga dorikina vaadu clever, topper ani vinna</div>
+            <div class="message-time">9:14:53 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Yashu mamul hype ivvale Bharath gurinchi <br><br>Inka idharu topper lu inka set kadha mi idharu ani anukunna appudu<br><br>Inka ala ala placement ochindi, mi idhariki manchi package ee ochindi, inka mi life ee set anukunna. Ni chapter naa life lo close anukunna <br><br><br>But god had different plans, niku bangalore adhi kuda marathalli lo untav ani telisindi Panvi cheppaka, ekkado chinna hope. Kani appudu kuda inka boy friend unnadu ane telusu naku.<br><br>Later birthday appudu nuv naku wish cheste chaalaaa happy feel ayya, evaru wish naku antha happiness ivvala.<br><br>Dare chesi birthday party idham ani pilicha, kudaradhu annav. Promise ga inka nannu kalavadam istam leka ila cheppinchi ani emo ani anukunna.<br><br>Next inka malli oka try idham ani iron hill ki plan chesa<br><br>Thankfully ochav, chala thanks, main reason appudu nuv already committed ani telusu <br>But asala em jarugutundo telusukundham ani curiosity appudu. <br>Aa roju asala nuv naaku entha nachav ante, matallo cheppalenu, ni voice ni behaviour ala ni midha istam perigindi</div>
+            <div class="message-time">9:23:28 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Next meet <br>Miru plan chesaru tuesday kaludham ani babai tiffins lo, appudu inka normal gane unna, like okati enti ante na pakkana aa pilla ledhu, i can talk and tell my pain anukunna, anukunnate alage ayyindi we talked a lot, nen cheppali anukunnadi motham cheppesa jariginavi, also appudu naku full clarity ochindi miru kalisi ler ani.<br><br>Naa polam lo molakalu ochai annaru <br>Naa prema lo chirugu kasindi anukunna <br><br>Inka next meet eppudu ani wait chestu unna chalaa, finally malli mire rcb match screening annaru. I felt again happy lopala pongipotentha …<br><br>That day inka ni kosam edaina cheyachu anipichindi like literally edhaina, appudu kuda like niku love midha interest ledhu nuv ontariga undali ani anukuntav ani chala telisindi</div>
+            <div class="message-time">9:30:52 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Kani ekkado chinna hope naku feeling nuv kuda feel avuthav ani, Chala baaga anipichindi aa roju like chala rojulu taravata info version of life experience chesinattu, aa roju nuv naku match jarigetapudu oka reel pettav like friendship gurinchi, something special reel adhi. Appudu anipichindi you atleast accepted me as a friend ani not like brother ani</div>
+            <div class="message-time">9:36:55 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">aa roju nuv kani panvi elago nuv kuda naku alage ani unte nenu inka sachipoyevadaniki, already you told as friend ani happy feel ayya</div>
+            <div class="message-time">9:37:26 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">malli manam chatting lo and reels lo konchem dagara ayyam</div>
+            <div class="message-time">9:38:58 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">naa vishyalu niku share cheyadam ni vishyalu nuv naku cheppadam, we finally tought of meeting seperately apart from panvi. Atleast appudu anipichindi inka ekkuva i am something special to you ani apart from atleast not like panvi ani.</div>
+            <div class="message-time">9:40:28 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Actually appude confess chesedham anukunna, appudu chesi unte pakka rejection ani naku telusu. SO inka personal ga vellina nuv inko la anukuntav tappuga vere abbai la laga ne nenu kuda ani motham office vishyale ee cheppa, aa park motham niku.</div>
+            <div class="message-time">9:41:30 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Next manam Third wave coffee ki vellam, appudu we spoke about somethings personal. appudu nuv oka mata annav like manam kalisinattu panvi ki teliste sachipothadu ani. i felt something special, enduko telidu. <br><br>i was waiting for the next day aa bannerghata zoo di plan vesa. gudiki veldham ani excitement tho unna. But gudiki kudarala, aa roju nuv intlo unte nenu vella gudiki, i prayed a lot nenu niku nachela la cheyamani devudini ala inka chala aa ammai naku dakkela chudu swamy ani. inka aa roju motham nitho happy ga unna, lifelong ilane unte bagunnu anipichindi.</div>
+            <div class="message-time">9:47:33 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">nenu elanti wife ni korukunnavo daniiki minchina qualities kanipichai nilo naku aa roju, oche darilo edupu enduko asalu ninnu miss avutunnatu ani <br>nen em cheppakundane duram ayyipotunnav ani <br><br>like ela ante intha close ayyam kadha inka nuv intiki vellipothav malli manam eppudu kalustamo telidu, malli anni marchipothav naa feelings matram naa dagara alane untai. malli ni daara ala bond create avudho ledho ani. Aa roju niku istam ane black shirt konna, niku istam ane projector konna annii, like niku edhi istam ayithe naku adhe istam ala.<br><br>aa roju niku chat lo confess chesedham anukunna, but appudu kuda kudarala malli block chesestav, ippude heavy heart tho veltunna malli ee heart break ni tattukolenu unna relation poyidhi ani, but somehow naa manasulo unnadi niku cheppa</div>
+            <div class="message-time">9:52:10 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">atleast nenu feel avutunnatu niku andulo 40% ayina nenu happy anukunna alane feel ayyav. one good hope appudu, <br><br>next day nuv intiki velta annav ninnu drop chedham anukunna, but mi family ostaru annav, badhesindi kani parledu le anukunna</div>
+            <div class="message-time">9:53:41 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">inka next ni raaka kosam wait chestu unna, appatike manam chatt lo bond konchem create ayyindi</div>
+            <div class="message-time">9:54:06 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">so next inka mi friend bithday partyy ani ochav, aa roju kaludham anna inka mi friends tho vellav, aa next days nunchi we started sharing food. chala baaga anipichindi naaku, we started sharing our feelings ante like life lo enti ani <br><br>past instances on tuesdayy. next friday barcas ki ellam mall ki ellam <br><br>i felt very special on that dayy.. too special. life lo eppudu ala kotha feel avvala</div>
+            <div class="message-time">10:01:36 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">but appudu kuda like nenu ante niku istam ani telisindi, but chat lo appudu nuvv inka relationship ki ready levu , you lost interest ani telisindi</div>
+            <div class="message-time">10:04:08 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Actually ni story telusukovali anukunnadi kuda like ni trauma clear cheyali ani anthe</div>
+            <div class="message-time">10:04:47 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Not like past gurinchi pakka teliyali ani</div>
+            <div class="message-time">10:05:04 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Tappu motham ni side unna kuda <br>Nenu ni side ee undevadini</div>
+            <div class="message-time">10:05:17 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">So inka ala malli next week kuda kalisam</div>
+            <div class="message-time">10:06:12 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Good exchange chesukunnam <br>Inka aa week ninnu drop chesa bus stand lo <br><br>With heavy heart</div>
+            <div class="message-time">10:06:32 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">But not heart breaker type this time</div>
+            <div class="message-time">10:06:39 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Endukante ee saari hope ochindi<br><br>Ee bond ni marchipovu</div>
+            <div class="message-time">10:06:53 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Next time ochinapudu inka cinfess chesedham ani</div>
+            <div class="message-time">10:07:01 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">So i was ok <br>Nuv veltunnav ani sadness unna<br><br>Naa pilla ani halku undhi annatu feel ayya</div>
+            <div class="message-time">10:07:22 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Vellina roje <br>Mana madyalo anukokunda confession jarigipoindi</div>
+            <div class="message-time">10:07:36 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">I felt happy and sad both at same time</div>
+            <div class="message-time">10:07:49 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Like nuv bangalore lo undiunte bagundedi ani</div>
+            <div class="message-time">10:08:33 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Inka vellaka mana calls gantalu gantalu, chala prasantham inka happiness ni ichindi</div>
+            <div class="message-time">10:11:03 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Finally nuv na sotham ani feel tho chala matladam anni share chesukunnam</div>
+            <div class="message-time">10:12:31 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Bonding strong ayinatu anipichindi</div>
+            <div class="message-time">10:12:41 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Antha ok anna time lo mana jathakalu kalisi raledu ani shock ichav</div>
+            <div class="message-time">10:12:54 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Mokkani devudu ledhu aaroju</div>
+            <div class="message-time">10:13:03 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Edo la unindi mind motham, anni na control lo lekunda avitunnatu anipichindi</div>
+            <div class="message-time">10:13:29 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Edupu oka pakka</div>
+            <div class="message-time">10:13:32 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Pani ekkuva oka pakka <br>Kani cheyadaniki mood ledu</div>
+            <div class="message-time">10:13:43 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Atu itu tiruguthu cover chesa <br>Last ki asalu entidi ani website lo search chesi vethikaa<br><br>That’s when we found that we have better jathakam</div>
+            <div class="message-time">10:14:51 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Inka ala ala ni midha prema ekkuva avutunde unindi</div>
+            <div class="message-time">10:15:02 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">So finally the wait is over propose chese time ochesindi finally</div>
+            <div class="message-time">10:16:02 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Inka chalu akkada chadivindi</div>
+            <div class="message-time">10:16:29 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Naa vaipu chudu</div>
+            <div class="message-time">10:16:33 PM</div>
+        </div>
+
+        <div class="chat-message sent">
+            <div class="message-bubble">Hmm inka live lo cheppesa gaa <br>Ikkada kuda cheppali gaa mari <br><br>I Love you bangarammmm</div>
+            <div class="message-time">10:17:12 PM</div>
+        </div>

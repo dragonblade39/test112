@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you be my Bangaram?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="petals-container" id="petals-container"></div>
+
+    <!-- SECTION 1: PHOTOS -->
+    <section id="photos-section" class="screen active">
+        <div class="glass-card">
+            <h1 class="hindi-text">Nee Navvu Kosam...</h1>
+            <h2 class="english-text">Just a little something to make you smile...</h2>
+            <div class="gallery slideshow-container">
+                <img id="slideshow-image" src="Photos/1.PNG" alt="Our Memory" />
+                <p id="slideshow-caption" class="photo-caption"></p>
+            </div>
+            <div class="slideshow-controls">
+                <button class="btn no-btn" id="prev-photo" style="visibility: hidden;">⟵ Prev</button>
+                <button class="btn yes-btn" id="next-photo">Next ➔</button>
+            </div>
+            <button class="btn yes-btn hidden mt-20" id="go-to-proposal">Begin Our Journey ➔</button>
+        </div>
+    </section>
+
+    <!-- SECTION 2: PROPOSAL -->
+    <section id="proposal-section" class="screen hidden">
+        <main class="glass-card" id="main-card">
+            <div class="card-border"></div>
+            <div class="card-content">
+                <div class="mandala-icon">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--gold)" stroke-width="2" stroke-dasharray="2, 4"/>
+                        <circle cx="50" cy="50" r="35" fill="none" stroke="var(--gold)" stroke-width="1"/>
+                        <path d="M50 15 C55 30, 70 45, 85 50 C70 55, 55 70, 50 85 C45 70, 30 55, 15 50 C30 45, 45 30, 50 15 Z" fill="rgba(255, 215, 0, 0.4)" stroke="var(--gold)" stroke-width="1"/>
+                        <circle cx="50" cy="50" r="8" fill="var(--gold)"/>
+                    </svg>
+                </div>
+                
+            <h1 class="hindi-text">Bangarammm ❤️</h1>
+                <h2 class="english-text">I have a beautiful question for you...</h2>
+                <div class="shayari"> 
+                    <p>Will you be my Dharma Patni for this Janma and the next 7 Janmas? And kalisi Satyanarayana Vratham chesukundhama?"</p>
+                </div>
+
+                <div class="actions">
+                    <button id="yes-btn" class="btn yes-btn">Yes, a thousand times!</button>
+                    <button id="no-btn" class="btn no-btn">No, maybe later?</button>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Success Overlay within Proposal Section -->
+        <div class="success-screen" id="success-screen">
+            <div class="success-content">
+                <h1 class="celebration-text">Subhamastu! Our Journey Begins</h1>
+                <p class="celebration-subtext">You just made me the happiest person in the world ❤️</p>
+                <div class="diya-container">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="diya">
+                        <path class="flame" d="M50 30 Q45 50 50 65 Q55 50 50 30 Z" fill="#FFA500"/>
+                        <path class="flame-inner" d="M50 40 Q47 50 50 60 Q53 50 50 40 Z" fill="#FFFF00"/>
+                        <path d="M20 60 Q50 90 80 60 L75 60 Q50 80 25 60 Z" fill="#8B4513"/>
+                        <ellipse cx="50" cy="60" rx="30" ry="10" fill="#A0522D"/>
+                        <ellipse cx="50" cy="60" rx="25" ry="5" fill="#FFD700"/>
+                    </svg>
+                </div>
+                <button class="btn yes-btn mt-20" id="go-to-post-proposal">Next ➔</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2.5: POST-PROPOSAL PHOTOS -->
+    <section id="post-proposal-section" class="screen hidden">
+        <div class="glass-card post-proposal-card">
+            <h1 class="hindi-text">A Little More...</h1>
+            <div class="gallery post-slideshow-container">
+                <img id="post-slideshow-image" src="Photos/11.PNG" alt="More Memory" />
+                <p id="post-slideshow-caption" class="photo-caption"></p>
+            </div>
+            <div class="slideshow-controls">
+                <button class="btn no-btn" id="post-prev-photo" style="visibility: hidden;">⟵ Prev</button>
+                <button class="btn yes-btn" id="post-next-photo">Next ➔</button>
+                <button class="btn yes-btn hidden" id="go-to-story">Read My Heart ➔</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- SECTION 3: STORY -->
+    <section id="story-section" class="screen hidden">
+        <div class="glass-card story-card">
+            <h1 class="hindi-text">Mana Katha</h1>
+            <h2 class="english-text">Our Story</h2>
+            <div class="scroll-container" id="scroll-container">
+        <div class="scroll-paragraph">
+            <div class="royal-text">Hi bangaram</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Ikkada nen cheppali anukunnadi already konni nenu chala sarlu cheppinundachu</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">But nakosam malli inkosari chaduvuthav ani rastunna</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Nenu ikkada cheppedhi antha naa manasulo unnade, edhi ninnu padeyali (ofc already padipoyav anuko) ledha ni dagara manchiga unnatu natinchali ani cheppatledhu.</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Everything heart lo nunchi oche feel thone cheptunna.</div>
+        </div>
+        <div class="scroll-paragraph">
+            <h3 class="royal-chapter">Chapter - 1 The First Sight</h3>
+            <div class="royal-text">So, my dear bangaram <br><br>Nenu ninnu chusindi first nenu college lo lassi shop lo<br>Chusinapudu blue top<br>White pant lo unnav, date gurtuledhu.<br><br>Appati nunche crush anuko, like first sight lone nachesav. <br><br>Kani em chedham, manaki unna introvertness ki asala chudadame ekkuva inka matladadam asala avvani pani<br><br>Inka ala ala konni situations valla manam kalavaledhu<br><br>Already niku boyfriend unnadu ani telisindi, appudu naku em anipichale<br><br>Paiga dorikina vaadu clever, topper ani vinna</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Yashu mamul hype ivvale Bharath gurinchi <br><br>Inka idharu topper lu inka set kadha mi idharu ani anukunna appudu<br><br>Inka ala ala placement ochindi, mi idhariki manchi package ee ochindi, inka mi life ee set anukunna. Ni chapter naa life lo close anukunna <br><br><br>But god had different plans, niku bangalore adhi kuda marathalli lo untav ani telisindi Panvi cheppaka, ekkado chinna hope. Kani appudu kuda inka boy friend unnadu ane telusu naku.</div>
+        </div>
+        <!-- Empty paragraphs to force page break -->
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph">
+            <h3 class="royal-chapter">Chapter - 2 Birthday invite & Ironhill visit</h3>
+            <div class="royal-text">Later birthday appudu nuv naku wish cheste chaalaaa happy feel ayya, evaru wish naku antha happiness ivvala.<br><br>Dare chesi birthday party idham ani pilicha, kudaradhu annav. Promise ga inka nannu kalavadam istam leka ila cheppinchi ani emo ani anukunna.<br><br>Next inka malli oka try idham ani iron hill ki plan chesa<br><br>Thankfully ochav, chala thanks, main reason appudu nuv already committed ani telusu <br>But asala em jarugutundo telusukundham ani curiosity appudu. <br>Aa roju asala nuv naaku entha nachav ante, matallo cheppalenu, ni voice ni behaviour ala ni midha istam perigindi</div>
+        </div>
+        <!-- Empty paragraphs to force page break -->
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph">
+            <h3 class="royal-chapter">Chapter - 3 Babai tiffins & RCB Match</h3>
+            <div class="royal-text">Next meet <br>Miru plan chesaru tuesday kaludham ani babai tiffins lo, appudu inka normal gane unna, like okati enti ante na pakkana aa pilla ledhu, i can talk and tell my pain anukunna, anukunnate alage ayyindi we talked a lot, nen cheppali anukunnadi motham cheppesa jariginavi, also appudu naku full clarity ochindi miru kalisi ler ani.<br><br>Naa polam lo molakalu ochai annatu <br>Naa prema lo chirugu kasindi anukunna <br><br>Inka next meet eppudu ani wait chestu unna chalaa, finally malli mire rcb match screening annaru. I felt again happy lopala pongipoyentha …<br><br>That day inka ni kosam edaina cheyachu anipichindi like literally edhaina, appudu kuda like niku love midha interest ledhu nuv ontariga undali ani anukuntav ani chala telisindi</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Kani ekkado chinna hope naku feeling nuv kuda feel avuthav ani, Chala baaga anipichindi aa roju like chala rojulu taravata info version of life experience chesinattu, aa roju nuv naku match jarigetapudu oka reel pettav like friendship gurinchi, something special reel adhi. Appudu anipichindi you atleast accepted me as a friend ani not like brother ani</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">aa roju nuv kani panvi elago nuv kuda naku alage ani unte nenu inka sachipoyevadaniki, already you told as friend ani happy feel ayya</div>
+        </div>
+        <!-- Empty paragraphs to force page break -->
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph">
+            <h3 class="royal-chapter">Chapter - 4 Getting Closer Park & Cafe Visits</h3>
+            <div class="royal-text">Malli manam chatting lo and reels lo konchem dagara ayyam. naa vishyalu niku share cheyadam ni vishyalu nuv naku cheppadam, we finally tought of meeting seperately apart from panvi. Atleast appudu anipichindi inka ekkuva i am something special to you ani apart from atleast not like panvi ani.</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Actually appude confess chesedham anukunna, appudu chesi unte pakka rejection ani naku telusu. SO inka personal ga vellina nuv inko la anukuntav tappuga vere abbai la laga ne nenu kuda ani motham office vishyale ee cheppa, aa park motham niku.</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Next manam Third wave coffee ki vellam, appudu we spoke about somethings personal. appudu nuv oka mata annav like manam kalisinattu panvi ki teliste sachipothadu ani. i felt something special, enduko telidu.</div>
+        </div>
+        <!-- Empty paragraphs to force page break -->
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph">
+            <h3 class="royal-chapter">Chapter - 5 Bannerghatta Zoo</h3>
+            <div class="royal-text">I was waiting for the next day aa bannerghata zoo di plan vesa. gudiki veldham ani excitement tho unna. But gudiki kudarala, aa roju nuv intlo unte nenu vella gudiki, i prayed a lot nenu niku nachela la cheyamani devudini ala inka chala aa ammai naku dakkela chudu swamy ani. inka aa roju motham nitho happy ga unna, lifelong ilane unte bagunnu anipichindi.</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">nenu elanti wife ni korukunnavo daniiki minchina qualities kanipichai nilo naku aa roju, oche darilo edupu enduko asalu ninnu miss avutunnatu ani <br>nen em cheppakundane duram ayyipotunnav ani <br><br>like ela ante intha close ayyam kadha inka nuv intiki vellipothav malli manam eppudu kalustamo telidu, malli anni marchipothav naa feelings matram naa dagara alane untai. malli ni daara ala bond create avudho ledho ani. Aa roju niku istam ane black shirt konna, niku istam ane projector konna annii, like niku edhi istam ayithe naku adhe istam ala.<br><br>aa roju niku chat lo confess chesedham anukunna, but appudu kuda kudarala malli block chesestav, ippude heavy heart tho veltunna malli ee heart break ni tattukolenu unna relation poyidhi ani, but somehow naa manasulo unnadi niku cheppa</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">atleast nenu feel avutunnatu niku andulo 40% ayina nenu happy anukunna alane feel ayyav. one good hope appudu, <br><br>next day nuv intiki velta annav ninnu drop chedham anukunna, but mi family ostaru annav, badhesindi kani parledu le anukunna <br><br>  Nuv vellaka nannu 8 vasanthalu chudamannapudu mana gurinchi relate ayyi cheppinda ledha strong women ala love lo padi weak ayyipoindi ani chepoadaniki suggest chesindaa ani doubtss appudu kuda</div>
+        </div>
+        <!-- Empty paragraphs to force page break -->
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph">
+            <h3 class="royal-chapter">Chapter - 6 Getting Closer with Food</h3>
+            <div class="royal-text">inka next ni raaka kosam wait chestu unna, appatike manam chatt lo bond konchem create ayyindi</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">so next inka mi friend bithday partyy ani ochav, aa roju kaludham anna inka mi friends tho vellav, aa next days nunchi we started sharing food. chala baaga anipichindi naaku, we started sharing our feelings ante like life lo enti ani <br><br>past instances on tuesdayy. next friday barcas ki ellam mall ki ellam <br><br>i felt very special on that dayy.. too special. life lo eppudu ala kotha feel avvala</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">but appudu kuda like nenu ante niku istam ani telisindi, but chat lo appudu nuvv inka relationship ki ready levu , you lost interest ani telisindi</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Actually ni story telusukovali anukunnadi kuda like ni trauma clear cheyali ani anthe</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Not like past gurinchi pakka teliyali ani</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Tappu motham ni side unna kuda <br>Nenu ni side ee undevadini</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">So inka ala malli next week kuda kalisam, Food exchange chesukunnam </div>
+        </div>
+        <!-- Empty paragraphs to force page break -->
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph">
+             <h3 class="royal-chapter">Chapter - 7 Going Home</h3>
+            <div class="royal-text"><br>Inka aa week ninnu drop chesa bus stand lo <br><br>With heavy heart</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">But not heart breaker type this time</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Endukante ee saari hope ochindi<br><br>Ee bond ni marchipovu</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Next time ochinapudu inka cinfess chesedham ani</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">So i was ok <br>Nuv veltunnav ani sadness unna<br><br>Naa pilla ani hakku undhi annatu feel ayya</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Vellina roje <br>Mana madyalo anukokunda confession jarigipoindi</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">I felt happy and sad both at same time</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Like nuv bangalore lo undiunte bagundedi ani</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Inka vellaka mana calls gantalu gantalu, chala prasantham inka happiness ni ichindi</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Finally nuv na sotham ani feel tho chala matladam anni share chesukunnam</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Bonding strong ayinatu anipichindi</div>
+        </div>
+        <!-- Empty paragraphs to force page break -->
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph"></div>
+        <div class="scroll-paragraph">
+            <h3 class="royal-chapter">Chapter - 8 Unwelcome Truth & Proposal</h3>
+            <div class="royal-text">Antha ok anna time lo mana jathakalu kalisi raledu ani shock ichav</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Mokkani devudu ledhu aaroju</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Edo la unindi mind motham, anni na control lo lekunda avitunnatu anipichindi</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Edupu oka pakka</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Pani ekkuva oka pakka <br>Kani cheyadaniki mood ledu</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Atu itu tiruguthu cover chesa <br>Last ki asalu entidi ani website lo search chesi vethikaa<br><br>That’s when we found that we have better jathakam</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">Inka ala ala ni midha prema ekkuva avutunde unindi, Like aa jathakam problem ochinapude i felt the real pain and dani taravata prema inka ekkuva ayyindhi</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">So finally the wait is over propose chese time ochesindi finally</div>
+        </div>
+        <div class="scroll-paragraph">
+            <div class="royal-text">I Love you Bangaram ❤️🌹</div>
+        </div>
+            </div>
+            <div class="slideshow-controls">
+                <button class="btn no-btn" id="prev-chat-page-btn" style="visibility: hidden;">⟵ Previous Page</button>
+                <button class="btn yes-btn" id="next-chat-page-btn">Read Next Page ➔</button>
+                <button class="btn yes-btn hidden" id="go-to-essence">Read My Heart's Depth ➔</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3.5: ESSENCE OF LOVE -->
+    <section id="essence-section" class="screen hidden">
+        <div class="newspaper-card" style="max-height: 90vh; overflow-y: auto;">
+            <h1 class="hindi-text">Naa Prema</h1>
+            <h2 class="english-text">The Depth of My Love</h2>
+            <div class="newspaper-text">
+                <p>Ee konni months travel lo naa mind lo parigethi nuv alasipoyuntav emo… kani ye roju, ye kshanam nenu alasipoledu.</p>
+                <p>General ga oka ammai ni chudatam, venta padatam, tane life ani brathikeyadam… ivanni time waste enduku ila chestunnaru ani anipichedi. Friends vese veshalu chusthe — Panvi, Vivek, Karthikey inka andharini chusi navvukunna rojulu unnayi. Kani adhi naa varaku ochentavaraku, aa feeling naku vachentavaraku… enduku ala chestaro ardham kaledu.</p>
+                <p>Ippudu telisindi.</p>
+                <p>Manaki okaru entha nacharo cheppagaligithe adhi istam.<br>Kani entha istamo cheppalekapovadame prema.</p>
+                <p>Aa cheppalenanta prema… naku nuvvante.</p>
+                <p>Brathakadam ante pranalatho undadam kadhu… pranam kanna ekkuvaga premichina ammai tho undadam ani telisindi.</p>
+                <p>Nuv naa life lo intha important eppudu ayyavo naku teliyadu. Kani ippudu naa prati roju, prati alochana lo nuvve unnava.</p>
+                <p>Manam confess chesukunnam kadha… aa roju nunchi prati feeling inka ekkuva ayyindi.<br>Nidra lechinappudu first alochana nuvve.<br>Nidra poyetappudu last alochana kuda nuvve.</p>
+                <p>Nuv vellaka entha mandi friends unna… naa mind lo matram ni alochanale untayi.</p>
+                <p>Ye chinna vishayam jarigina nitho share chesukovali anipistundi. Adhe naku istam.<br>Nuv natho edaina share chesina… enduko teliyani oka happiness vastundi.</p>
+                <p>Intlo vallatho matladutunnappudu kuda… "Manam iddaram kalisi unte ee situation ni ela deal chesevallam?" ani alochistanu.</p>
+                <p>Ippudu kuda idhi nenu rastunnappudu… ni notifications ostunnayi. Chala happy feels istunnayi.</p>
+                <p>Mundu edaina divert ayye reels ochina "Not Interested" kottevadini.<br>Kani ninnu kalisina tarvata, feelings periginappati nunchi… prati reel save chesukuntunna.<br>Confess ayyaka… anni nithone share chestunna.<br>Aa reels anni nakosame create chesinattu anipistayi.</p>
+                <p>Ye situation nenu enjoy chesina… nuv naa pakkana unte inkentha baguntundo ani anipistundi.<br>Ye movie lo love scenes chusina… mana gurinche anipistundi. Mana feelings ni relate chesukuntanu.</p>
+                <p>Ninnu premichinanta nenu evarini premichaledu.<br>Aa chance kuda eppudu raledu.<br>Inka future lo kuda ranivvanu.</p>
+                <p>Nuv avunu anna…<br>Kadhu anna…<br>Nuv naa life lo eppatiki inthe prema tho, oka highest position lo nilichipothav.</p>
+                <p>Kani oka maata matram cheptanu…<br>Nen cheppina maatallo niku konchemaina nijayathi kanipisthe… life long inthe prema tho kaadhu, inka ekkuva prema tho nithone undipothanu… nithone untanu.</p>
+                <p>Ninnu oka maata matram adugutanu…</p>
+                <p style="text-align: center; color: #8B4513;"><strong>Please… eppudu kuda ninnu nuvvu takkuva anukoku.</strong></p>
+                <p style="text-align: center; color: #8B4513;"><strong>Always talk good about yourself.</strong></p>
+                <p style="text-align: center; color: #8B4513;"><strong>Don't even underestimate yourself.</strong></p>
+                <p>Endukante nenu chuse nuvvu… chala special.</p>
+                <p>Future gurinchi alochinchinappudu kuda… naa imagination lo nuvve untav.</p>
+                <p>Pelli chesukoni…<br>Kalisi Satyanarayana Swamy Vratam cheddam kadha.<br>Nenu car nerchukoni…<br>Ninnu anni places tippali.</p>
+                <p>Simple ga cheppalante…</p>
+                <p>Cheyadaniki oka pani…<br>Brathakadaniki oka asha…<br>Premichadaniki oka ammai…<br>Kalisi enjoy cheyadaniki iddari parents…<br>Chalu… ee life ki.</p>
+                <p>Prati okkaru girlfriend ni set chesuko… kalisi tirugu antaru.<br>Kani…<br>Nuvve naa wife.<br>Adhi nenu eppudo fix ayyipoya.<br>Ippudu nuvvu kuda fix ayyipo.</p>
+                <p>Endukante…</p>
+                <p style="font-size: 1.3rem; text-align: center; margin-top: 20px;">
+                    Prema ante cheppadam kadhu…<br>Cheppalekapovadam.<br><br>Aa cheppalekapoyina maatala anni kalipithe…<br>Adhe naa prema.<br><br>Aa prema motham…<br><strong>Nuvve. ❤️</strong>
+                </p>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="btn yes-btn" id="go-to-promises-real" style="color: white;">Read My Promises ➔</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: PROMISES -->
+    <section id="promises-section" class="screen hidden">
+        <div class="glass-card promises-card">
+            <h1 class="hindi-text">Naa Pramanalu</h1>
+            <h2 class="english-text">My Promises to You</h2>
+            <div class="promises-list">
+                <p class="photo-caption" style="text-align: center; margin-bottom: 20px; font-size: 1.1rem; color: #fdf5e6;">Niku konni points chepta as a promises anuko...</p>
+                <div class="promise-item">
+                    <span class="promise-icon">🤝</span>
+                    <p>Niku life lo ye problem ranivanu ani nenu cheppanu, because problems ostai life lo ups and downs common, but ye problem ochina manam solve chesukundham ane nammakam istunna, odhilesi ellipoye type kaad nenu.</p>
+                </div>
+                <div class="promise-item">
+                    <span class="promise-icon">🛡️</span>
+                    <p>Niku future lo mi family ki cheppe time lo ni self respect ekkada tagganivvanu. Like mi akka situation niku ranivvanu asalu. Oka ammai ki tana puttinti lo andaru duram pedithe danikkana inka ammai ki inko duradrustam undadu. So alanti situation ee oste last option with heavy heart nenu ni respect alane unchi exit avvadaniki ready.<br><br>But hope undhi naku we will make everything work as expected ani.</p>
+                </div>
+                <div class="promise-item">
+                    <span class="promise-icon">🏠</span>
+                    <p>Maa family lo niku ye problem undadu. Nenu edhi chepte aa decision namme type. Aa nammakam ni nenu missuse chesukoledhu intha varaku. So puttinti lo niku ye caring undo adhi taggakunda chusukuntaru maa side, aa nammakam naku undhi.</p>
+                </div>
+                <div class="promise-item">
+                    <span class="promise-icon">❤️</span>
+                    <p>Em misunderstanding ochina, future lo evaro ochi em anna pullalu pettina, just tell to me and clear yourself nenu adhe chesta. We just need to be together more during misunderstandings.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="btn yes-btn" id="go-to-ending">One Last Thing ➔</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: ENDING -->
+    <section id="ending-section" class="screen hidden">
+        <div class="glass-card promises-card" style="text-align: center; padding: 40px 20px;">
+            <div class="shayari" style="font-family: 'Lora', serif; font-size: 2rem; font-style: italic; line-height: 1.8; color: var(--gold); text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">
+                <p>
+                    Rose is red<br>
+                    Sky is blue<br>
+                    My love is true and it’s always for you ❤️
+
+                    Thank you Bangaram, for coming into my life and accepting my love ❤️❤️.
+
+                    I promise that i will try to make every moment of your life with me happy.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
