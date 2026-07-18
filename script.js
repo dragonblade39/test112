@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // SECTION NAVIGATION LOGIC
+    const letterSection = document.getElementById('letter-section');
     const photosSection = document.getElementById('photos-section');
     const proposalSection = document.getElementById('proposal-section');
     const storySection = document.getElementById('story-section');
@@ -103,6 +104,49 @@ document.addEventListener('DOMContentLoaded', () => {
         to.classList.remove('hidden');
         to.classList.add('active');
         window.scrollTo(0, 0);
+    }
+
+    // LOVE LETTER LOGIC
+    const envelopeWrapper = document.getElementById('envelope-wrapper');
+    const envelope = document.querySelector('.envelope');
+
+    if (envelopeWrapper) {
+        envelopeWrapper.addEventListener('click', () => {
+            if (!envelope.classList.contains('open')) {
+                envelope.classList.add('open');
+                
+                // Play background music on first interaction (direct iframe injection bypasses API autoplay blocks)
+                const ytPlayer = document.getElementById('youtube-player');
+                if (ytPlayer && !ytPlayer.src) {
+                    ytPlayer.src = "https://www.youtube.com/embed/7TGNM3c183s?autoplay=1&loop=1&playlist=7TGNM3c183s&controls=0";
+                }
+
+                // Fade out the initial greeting text
+                const initialGreeting = document.getElementById('initial-greeting');
+                if (initialGreeting) {
+                    initialGreeting.style.opacity = '0';
+                }
+                
+                // Show photos section behind the letter animation immediately
+                photosSection.style.animation = 'none'; // Disable default screen fadeIn
+                photosSection.classList.remove('hidden');
+                photosSection.classList.add('active');
+                photosSection.style.opacity = '0';
+                
+                // Fade in photos section exactly as the letter zooms into the camera
+                setTimeout(() => {
+                    photosSection.style.transition = 'opacity 1s ease';
+                    photosSection.style.opacity = '1';
+                }, 2200); // Start fade-in slightly before full zoom
+                
+                // Hide the letter section completely after animation finishes
+                setTimeout(() => {
+                    letterSection.style.display = 'none';
+                    photosSection.style.transition = ''; // Reset transition
+                    photosSection.style.animation = ''; // Reset animation
+                }, 3500); // Safe reset after animation
+            }
+        });
     }
 
     goToProposalBtn.addEventListener('click', () => {

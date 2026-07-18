@@ -14,8 +14,28 @@
     <div class="bg-pattern"></div>
     <div class="petals-container" id="petals-container"></div>
 
+    <!-- SECTION 0: LOVE LETTER -->
+    <section id="letter-section" class="screen active">
+        <div id="initial-greeting" style="text-align: center; margin-bottom: 50px; z-index: 10; transition: opacity 0.5s ease;">
+            <h1 class="english-text" style="font-size: 3.5rem; color: var(--gold); text-shadow: 2px 2px 10px rgba(0,0,0,0.8); margin: 0;">A letter for you, Bhavya❤️</h1>
+        </div>
+        <div class="envelope-wrapper" id="envelope-wrapper">
+            <div class="envelope">
+                <div class="front flap"></div>
+                <div class="front pocket"></div>
+                <div class="letter">
+                    <div class="letter-content">
+                        <div class="heart-seal">❤️</div>
+                        <p class="letter-text">For You, Bangaram...</p>
+                        <p class="click-to-open">(Click to open)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- SECTION 1: PHOTOS -->
-    <section id="photos-section" class="screen active">
+    <section id="photos-section" class="screen hidden">
         <div class="glass-card">
             <h1 class="hindi-text">Nee Navvu Kosam...</h1>
             <h2 class="english-text">Just a little something to make you smile...</h2>
@@ -367,6 +387,9 @@
             </div>
         </div>
     </section>
+
+    <!-- Background Music -->
+    <iframe id="youtube-player" style="position: absolute; top: -9999px; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none;" allow="autoplay" frameborder="0"></iframe>
 
     <script src="script.js"></script>
 </body>
